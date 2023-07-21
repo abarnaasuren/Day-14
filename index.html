@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+
+    
+    .container {
+        max-width:300px;
+        margin: 1 auto;
+        padding:20px;
+        border:1px solid black;
+        background-color: aqua;
+    }
+
+    .form-group {
+        margin-bottom: 10px;
+        background-color: blanchedalmond;
+    }
+    .result {
+        font-weight: bold;
+        font-family: italic;
+        margin-top: 10px;
+        background-color: chocolate;
+
+    }
+</style>
+
+
+
+</head>
+<body>
+    
+    <div class = "container">
+        <h1>Calculator!!</h1>
+        <div class = " form-group">
+            <label for="num1">Number1:</label>
+            <input type = "number" id="num1"/>
+            </div>
+            <div class = " form-group">
+                <label for="num2">Number2:</label>
+                <input type = "number" id="num2"/>
+                </div>
+                <div class = "form-group">
+                    <button onclick="performCalculation('add')">ADD</button>
+                    <button onclick="performCalculation('sub')">SUB</button>
+                    <button onclick="performCalculation('mul')">MUL</button>
+                    <button onclick="performCalculation('div')">DIV</button>
+                    
+
+                <script src="index.js"></script>
+
+        </div>
+        <div class = "result">
+            Result:
+            <span id="result"></span>
+            </div>
+    </div>
+</body>
+</html>
